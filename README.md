@@ -1,2 +1,2 @@
-# PythonTemplate
-Template for basic Python project using a container
+# TSTemplate
+Template for basic TypeScript/JavaScript project using a container
