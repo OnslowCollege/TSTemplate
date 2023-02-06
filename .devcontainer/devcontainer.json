@@ -1,34 +1,23 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node",
     "settings": { 
         "gitlens.showWhatsNewAfterUpgrades": false,
         "gitlens.showWelcomeOnInstall": false,
-        "python.pythonPath": "/usr/local/bin/python",
-        "python.linting.enabled": true,
-        "python.linting.pycodestyleEnabled": true,
-        "python.linting.pydocstyleEnabled": true,
-        "python.linting.pydocstyleArgs": ["--ignore=D400", "--ignore=D212"],
-        "python.linting.mypyEnabled": true,
-        "python.linting.mypyArgs": [
-            "--follow-imports=silent",
-            "--ignore-missing-imports",
-            "--show-column-numbers",
-            "--no-pretty",
-            "--strict"
-        ],
         "workbench.colorTheme": "GitHub Dark High Contrast",
         "editor.wordWrap": "on",
         "editor.fontSize": 16,
         "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "modificationsIfAvailable",
         "editor.formatOnType": true,
+        "eslint.format.enable": true,
         "window.menuBarVisibility": "classic"
     },
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
+                "dbaeumer.vscode-eslint",
+                "DSKWRK.vscode-generate-getter-setter",
+                "WallabyJs.quokka-vscode",
                 "eamodio.gitlens",
                 "GitHub.vscode-pull-request-github",
                 "yzhang.markdown-all-in-one",
@@ -37,6 +26,5 @@
                 "GitHub.github-vscode-theme"
             ]
         }
-    },
-    "postCreateCommand": "python3 -m pip install -r requirements.txt"
+    }
 }
