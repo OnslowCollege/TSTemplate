@@ -26,5 +26,6 @@
                 "GitHub.github-vscode-theme"
             ]
         }
-    }
+    },
+    "postStartCommand": "bash -c git remote set-url origin 'https://github.com/OnslowCollege/$(basename $(pwd))'"
 }
